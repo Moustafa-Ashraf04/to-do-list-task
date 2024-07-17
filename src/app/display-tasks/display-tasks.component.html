@@ -1,0 +1,22 @@
+@if (todos.length > 0) {
+<ul class="list-group">
+  @for (todo of todos; track todo.id) {
+  <li
+    class="list-group-item d-flex justify-content-between"
+    [ngClass]="{ completed: todo.completed }"
+    (click)="onCompleteTask(todo.id)"
+  >
+    <span>
+      @if (todo.completed) {
+      <i class="fa-solid fa-square-check"></i>
+      }
+      {{ todo.task }}
+    </span>
+
+    <button class="btn btn-danger btn-sm" (click)="onDeleteTask(todo.id)">
+      Delete
+    </button>
+  </li>
+  }
+</ul>
+}

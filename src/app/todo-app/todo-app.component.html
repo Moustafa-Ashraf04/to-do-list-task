@@ -1,0 +1,29 @@
+<div class="pt-5 container">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-8">
+      <div class="col-12 mb-5">
+        <h2 class="my-4 text-center text-white">My To Do List</h2>
+        <app-add-task (addTask)="onAddTask($event)"></app-add-task>
+
+        @if (taskExists) {
+        <div class="m-0 text-danger ps-3">
+          <small>{{ taskExists }}</small>
+        </div>
+        } @if (todos.length > 0) {
+        <div class="col-12 d-flex justify-content-end my-4">
+          <button class="btn btn-danger" (click)="onClearTodoList()">
+            Clear List
+          </button>
+        </div>
+        }
+      </div>
+
+      <div class="col-12">
+        <app-display-tasks
+          [todos]="todos"
+          (deleteTask)="onDeleteTask($event)"
+        ></app-display-tasks>
+      </div>
+    </div>
+  </div>
+</div>

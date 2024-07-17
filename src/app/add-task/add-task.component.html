@@ -1,0 +1,22 @@
+<form class="mt-4" (ngSubmit)="onSubmit(f)" #f="ngForm">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 d-flex gap-2">
+        <input
+          type="text"
+          class="form-control form-control-lg"
+          placeholder="Enter new task"
+          name="task"
+          ngModel
+          required
+        />
+        <button type="submit" class="btn btn-primary btn-lg">Add</button>
+      </div>
+      @if (inputRequired) {
+      <div class="m-0 text-danger">
+        <small>{{ inputRequired }}</small>
+      </div>
+      }
+    </div>
+  </div>
+</form>
