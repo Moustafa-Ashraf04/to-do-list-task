@@ -4,6 +4,10 @@
 
 This project is a simple Todo List management application built using Angular. It allows users to add, complete, and delete tasks, with data persistence using local storage.
 
+## Deployment
+
+The project is deployed and accessible at [Vercel](https://to-do-list-task-one.vercel.app/).
+
 ## Features
 
 - **Adding Tasks**: Users can add new tasks to the Todo List.
@@ -27,5 +31,5 @@ This project is a simple Todo List management application built using Angular. I
 
 ## Additional Notes
 
-- This project demonstrates basic Angular concepts such as components, interfaces, forms, and data binding.
+- This project demonstrates basic Angular concepts such as components, services, forms, and data binding.
 - It serves as a practical example of implementing CRUD (Create, Read, Update, Delete) operations in an Angular application.
