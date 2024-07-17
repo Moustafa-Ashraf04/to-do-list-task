@@ -6,7 +6,7 @@ This project is a simple Todo List management application built using Angular. I
 
 ## Deployment
 
-The project is deployed and accessible at [Vercel](https://to-do-list-task-one.vercel.app/){:target="\_blank"}.
+The project is deployed and accessible at [Vercel](https://to-do-list-task-one.vercel.app/).
 
 ## Features
 
